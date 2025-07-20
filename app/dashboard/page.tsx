@@ -128,9 +128,19 @@ export default function Page() {
     "view_audit",
     "admin",
   ]);
-  const [selectedNode, setSelectedNode] = useState(null);
+  type HierarchyNode = {
+    id: string;
+    name: string;
+    level: string;
+    allocation: number;
+    utilized: number;
+    performance: "good" | "warning" | "poor";
+    children?: HierarchyNode[];
+  };
 
-  const handleNodeClick = (node: any) => {
+  const [selectedNode, setSelectedNode] = useState<HierarchyNode | null>(null);
+
+  const handleNodeClick = (node: HierarchyNode) => {
     setSelectedNode(node);
     // Navigate to detailed view or show modal
     console.log("Selected node:", node);

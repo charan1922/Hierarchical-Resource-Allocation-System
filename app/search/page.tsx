@@ -238,7 +238,8 @@ export default function SearchPage() {
           <CardHeader>
             <CardTitle>Suggested Searches</CardTitle>
             <CardDescription>
-              Common searches that might help you find what you're looking for
+              Common searches that might help you find what you&apos;re looking
+              for
             </CardDescription>
           </CardHeader>
           <CardContent>

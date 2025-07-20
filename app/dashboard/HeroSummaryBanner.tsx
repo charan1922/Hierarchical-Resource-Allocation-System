@@ -89,7 +89,7 @@ export function HeroSummaryBanner({
       <div className="mb-6">
         <h1 className="text-3xl font-bold">Welcome back, {user.name}!</h1>
         <p className="text-muted-foreground mt-1">
-          Here's your resource allocation overview
+          Here&apos;s your resource allocation overview
         </p>
       </div>
 

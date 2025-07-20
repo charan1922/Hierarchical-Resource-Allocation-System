@@ -12,11 +12,13 @@ import {
   IconSettings,
 } from "@tabler/icons-react";
 
+import type { IconProps } from "@tabler/icons-react";
+
 interface Action {
   id: string;
   title: string;
   description: string;
-  icon: React.ComponentType<any>;
+  icon: React.ComponentType<IconProps>;
   href: string;
   badge?: string;
   permissions: string[];
